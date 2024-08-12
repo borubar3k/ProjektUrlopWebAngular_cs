@@ -1,0 +1,27 @@
+<div class="main-wezurlop">
+  <div class="duza-czcionka">
+    <h1>Weź Urlop</h1>
+  </div>
+  <div class="dostepne-dni">
+    <h3>Dostępne dni urlopu: {{dniWolne}}</h3>
+  </div>
+  <div class="pole-wezurlop">
+    <div class="form-container">
+      <div class="form-group">
+        <label for="dataRozp">Data rozpoczęcia:</label>
+        <input type="date" id="dataRozp" [(ngModel)]="nowyUrlop.DataRozp" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="dataZak">Data zakończenia:</label>
+        <input type="date" id="dataZak" [(ngModel)]="nowyUrlop.DataZak" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="rodzaj">Rodzaj urlopu:</label>
+        <input type="text" id="rodzaj" [(ngModel)]="nowyUrlop.Rodzaj" class="form-control">
+      </div>
+    </div>
+    <button (click)="onDodajUrlopClick()" class="btn btn-primary">Dodaj Urlop</button>
+  </div>
+</div>

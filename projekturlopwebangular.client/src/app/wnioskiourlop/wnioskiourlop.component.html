@@ -1,0 +1,31 @@
+<div class="main-wezurlop">
+  <div class="duza-czcionka">
+    <h1>Wnioski o urlop</h1>
+  </div>
+  <div class="employee-list-container">
+    <div class="header">
+      <div class="header-item">Imię i nazwisko</div>
+      <div class="header-item">Data rozpoczęcia</div>
+      <div class="header-item">Data zakończenia</div>
+      <div class="header-item">Ilość dni</div>
+      <div class="header-item">Akceptuj</div>
+      <div class="header-item"></div>
+    </div>
+    <ul class="employee-list">
+      <li *ngFor="let urlop of wnioski" [ngClass]="{'selected-item': isSelected(urlop)}">
+        <div class="employee-item">{{urlop.pracownik.imie}} {{urlop.pracownik.nazwisko}}</div>
+        <div class="employee-item">{{ urlop.dataRozp | date:'yyyy-MM-dd' }}</div>
+        <div class="employee-item">{{ urlop.dataZak | date:'yyyy-MM-dd' }}</div>
+        <div class="employee-item">{{ urlop.iloscDni }}</div>
+        <div class="employee-item">
+          <button (click)="confirmDelete(urlop)">Akceptuj</button>
+        </div>
+        <div *ngIf="isSelected(urlop)" class="confirm-message">
+          Czy chcesz zaakceptować urlop?
+          <button (click)="deleteWniosek()">Tak</button>
+          <button (click)="cancelDelete()">Nie</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

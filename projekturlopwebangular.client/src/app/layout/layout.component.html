@@ -1,0 +1,39 @@
+<div class="layout-container">
+  <div class="green-panel">
+    <header class="header">
+      <div>System</div>
+      <div>Zarządzania</div>
+      <div>Urlopami</div>
+    </header>
+
+    <main class="main">
+      <div>
+        <button class="btn" type="button" (click)="navigateTo('user/wezurlop')">Weź Urlop</button>
+      </div>
+      <div>
+        <button class="btn" type="button" (click)="navigateTo('user/twojahistoria')">Twoja Historia</button>
+      </div>
+      <div>
+        <button class="btn" type="button" (click)="navigateTo('user/twojedane')">Twoje Dane</button>
+      </div>
+      <div *ngIf="isAdmin">
+        <button class="btn" type="button" (click)="navigateTo('admin/pracownicy')">Lista Pracowników</button>
+      </div>
+      <div *ngIf="isAdmin">
+        <button class="btn" type="button" (click)="navigateTo('admin/wnioskiourlop')">Wnioski o Urlop</button>
+      </div>
+      <div *ngIf="isAdmin">
+        <button class="btn" type="button" (click)="navigateTo('admin/historiaurlopow')">Historia Urlopów</button>
+      </div>
+    </main>
+
+    <footer class="footer">
+
+      <button class="btn-wyloguj" type="button" (click)="logout()">Wyloguj się</button>
+      <p>&copy; 2024 Konrad Kurpiel</p>
+    </footer>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

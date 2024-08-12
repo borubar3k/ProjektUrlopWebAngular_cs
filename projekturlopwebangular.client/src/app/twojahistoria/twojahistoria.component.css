@@ -1,0 +1,98 @@
+.main-wezurlop {
+  background-color: lightgreen;
+  color: black;
+  width: calc(100vw - 50vh);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 50vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.duza-czcionka {
+  font-size: 48px;
+  font-family: fantasy, sans-serif;
+}
+
+.lbl-dni {
+  font-size: 36px;
+}
+/* listapracownikow.component.css */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+  li:hover {
+    background-color: #f0f0f0;
+  }
+
+.employee-list-container {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Stylowanie kontenera nagłówków */
+.header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 kolumn o równej szerokości */
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Stylowanie elementów nagłówków */
+.header-item {
+  padding: 5px;
+  text-align: center; /* Wyśrodkowanie tekstu w nagłówkach */
+}
+
+/* Poprawki dla listy pracowników */
+.employee-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+  .employee-list li {
+    display: grid; /* Użyj grid layoutu, aby elementy były w kolumnach */
+    grid-template-columns: repeat(5, 1fr); /* 5 kolumn o równej szerokości */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    align-items: center; /* Wyrównanie elementów w pionie */
+  }
+
+.employee-item {
+  padding: 5px;
+}
+
+
+button {
+  background-color: seagreen;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+  button:hover {
+    background-color: lightgreen;
+    color: black;
+  }

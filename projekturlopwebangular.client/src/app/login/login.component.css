@@ -1,0 +1,99 @@
+.green-panel {
+  background-color: seagreen;
+  width: 40%;
+  height: 100%;
+  color: whitesmoke;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 50px;
+  font-size: 5vw;
+  font-family: fantasy, sans-serif;
+  text-align: right;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.login-panel {
+  background-color: lightgreen;
+  width: 60%;
+  height: 100%;
+  color: black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 20px;
+  font-family: fantasy, sans-serif;
+  text-align: right;
+}
+.login-panel2 {
+  background-color: whitesmoke;
+  width: 400px;
+  height: 400px;
+  color: black;
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 14px;
+  font-family: fantasy, sans-serif;
+  border-radius: 15px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+  margin-bottom: 20px; /* Odstęp między polami formularza */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Stylizacja dla label */
+.form-label {
+  display: block; /* Ustawia label na blok, co sprawia, że zajmuje całą szerokość */
+  font-size: 18px; /* Rozmiar czcionki */
+  margin-bottom: 5px; /* Odstęp poniżej label */
+  font-family: 'Arial', sans-serif; /* Typografia */
+}
+
+/* Stylizacja dla input */
+.form-input {
+  width: 380px; /* Szerokość input dopasowana do szerokości kontenera */
+  padding: 10px; /* Wewnętrzne odstępy w polu */
+  font-size: 18px; /* Rozmiar czcionki w polu */
+  border: 1px solid #ccc; /* Obramowanie pola */
+  border-radius: 5px; /* Zaokrąglenie narożników */
+  box-sizing: border-box; /* Upewnia się, że padding i border są wliczone w szerokość */
+  transition: border-color 0.3s ease; /* Płynna zmiana koloru obramowania */
+}
+
+  .form-input:focus {
+    border-color: #007bff; /* Kolor obramowania podczas focus */
+    outline: none; /* Usunięcie domyślnego obramowania focus */
+  }
+.submit-button {
+  width: 380px;
+  padding: 10px 50px;
+  font-size: 18px;
+  color: black;
+  background-color: lightgreen;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+  .submit-button:hover {
+    background-color: seagreen;
+  }

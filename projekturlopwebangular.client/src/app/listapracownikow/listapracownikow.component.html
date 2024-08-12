@@ -1,0 +1,32 @@
+<div class="main-wezurlop">
+  <div class="duza-czcionka">
+    <h1>Lista pracowników</h1>
+  </div>
+  <div class="employee-list-container">
+    <div class="header">
+      <div class="header-item">Imię i nazwisko</div>
+      <div class="header-item">E-mail</div>
+      <div class="header-item">Dostępny urlop</div>
+      <div class="header-item">Data zatr.</div>
+      <div class="header-item">Usuń pracownika</div>
+    </div>
+    <ul class="employee-list">
+      <li *ngFor="let pracownik of pracownicy">
+        <div class="employee-item">{{ pracownik.imie }} {{ pracownik.nazwisko }}</div>
+        <div class="employee-item">{{ pracownik.email }}</div>
+        <div class="employee-item">{{ pracownik.dniUrlopu }}</div>
+        <div class="employee-item">{{ pracownik.dataZatr | date:'yyyy-MM-dd' }}</div>
+        <div class="employee-item">
+          <button (click)="confirmDelete(pracownik)">Usuń</button>
+        </div>
+      </li>
+    </ul>
+    <div *ngIf="wybranyPracownik">
+      <h3>Czy chcesz usunąć pracownika: {{ wybranyPracownik.imie }} {{ wybranyPracownik.nazwisko }}?</h3>
+      <button (click)="deletePracownik()">Tak</button>
+      <button (click)="cancelDelete()">Nie</button>
+    </div>
+
+    <button class="btn-primary" (click)="navigateToAddPracownik()">Dodaj Pracownika</button>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.main-wezurlop {
+  background-color: lightgreen;
+  color: black;
+  width: calc(100vw - 50vh);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 50vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.duza-czcionka {
+  font-size: 48px;
+  font-family: fantasy, sans-serif;
+}

@@ -1,0 +1,28 @@
+<div class="green-panel">
+  <div>
+    System
+  </div>
+  <div>
+    Zarządzania
+  </div>
+  <div>
+    Urlopami
+  </div>
+</div>
+<div class="login-panel">
+  <div class="login-panel2">
+    <main class="content">
+      <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+        <div class="form-group">
+          <label class="form-label" for="email">e-mail:</label>
+          <input class="form-input" id="email" [(ngModel)]="loginData.Email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="haslo">hasło:</label>
+          <input class="form-input" id="haslo" type="password" [(ngModel)]="loginData.Haslo" name="haslo" required>
+        </div>
+        <button class="submit-button"type="submit">Zaloguj się</button>
+      </form>
+    </main>
+  </div>
+</div>

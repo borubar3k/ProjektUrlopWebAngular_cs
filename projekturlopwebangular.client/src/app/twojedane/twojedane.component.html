@@ -1,0 +1,17 @@
+<div class="main-wezurlop">
+  <div class="duza-czcionka">
+    <h1>Twoje dane</h1>
+  </div>
+  <div class="employee-list-container">
+    <div *ngIf="twojeDane" class="employee-list">
+      <div class="header-item">Imię i nazwisko: {{twojeDane.imie}} {{twojeDane.nazwisko}}</div>
+      <div class="header-item">Data zatrudnienia: {{twojeDane.dataZatr | date:"yyyy-MM-dd"}}</div>
+      <div class="header-item">e-mail: {{twojeDane.email}}</div>
+      <div class="header-item">Dostępne dni urlopu: {{twojeDane.dniUrlopu}}</div>
+      <div class="header-item">Uprawnienia administratora: {{twojeDane.isAdmin}}</div>
+    </div>
+    <ng-template #loading>
+      <p>Ładowanie danych...</p>
+    </ng-template>
+  </div>
+</div>

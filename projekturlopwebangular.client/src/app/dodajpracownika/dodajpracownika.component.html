@@ -1,0 +1,41 @@
+<div class="main-wezurlop">
+  <div class="duza-czcionka">
+    <h1>Dodaj Pracownika</h1>
+  </div>
+  <div class="pole-wezurlop">
+    <form (ngSubmit)="onDodajPracownika()" class="form-container">
+      <div class="form-group">
+        <label for="imie">Imię</label>
+        <input type="text" id="imie" [(ngModel)]="nowyPracownik.Imie" name="imie" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="nazwisko">Nazwisko</label>
+        <input type="text" id="nazwisko" [(ngModel)]="nowyPracownik.Nazwisko" name="nazwisko" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" [(ngModel)]="nowyPracownik.Email" name="email" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="haslo">Hasło</label>
+        <input type="password" id="haslo" [(ngModel)]="nowyPracownik.Haslo" name="haslo" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="isAdmin">Czy Administrator?</label>
+        <select id="isAdmin" [(ngModel)]="nowyPracownik.IsAdmin" name="isAdmin" class="form-control">
+          <option value="true">Tak</option>
+          <option value="false">Nie</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="dataZatr">Data Zatrudnienia</label>
+        <input type="date" id="dataZatr" [(ngModel)]="nowyPracownik.DataZatr" name="dataZatr" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="dniUrlopu">Dni Urlopu</label>
+        <input type="number" id="dniUrlopu" [(ngModel)]="nowyPracownik.DniUrlopu" name="dniUrlopu" class="form-control" required />
+      </div>
+      <button type="submit" class="btn-primary">Dodaj Pracownika</button>
+    </form>
+  </div>
+</div>

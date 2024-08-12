@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.784122">
+  <PropertyGroup>
+    <StartupCommand>npm start</StartupCommand>
+    <JavaScriptTestFramework>Jasmine</JavaScriptTestFramework>
+    <!-- Allows the build (or compile) script located on package.json to run on Build -->
+    <ShouldRunBuildScript>false</ShouldRunBuildScript>
+    <!-- Folder where production build objects will be placed -->
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\projekturlopwebangular.client\browser\</BuildOutputFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\app\layout\" />
+    <Folder Include="src\app\historiaurlopow\" />
+    <Folder Include="src\app\dodajpracownika\" />
+    <Folder Include="src\app\twojedane\" />
+    <Folder Include="src\app\wnioski-akceptuj\" />
+    <Folder Include="src\app\pracownicy-usun\" />
+    <Folder Include="src\app\wnioskiourlop\" />
+    <Folder Include="src\app\twojahistoria\" />
+    <Folder Include="src\app\services\" />
+  </ItemGroup>
+</Project>

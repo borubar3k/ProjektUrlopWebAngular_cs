@@ -1,0 +1,22 @@
+<div class="main-wezurlop">
+  <div class="duza-czcionka">
+    <h1>Historia urlopów</h1>
+  </div>
+  <div class="employee-list-container">
+    <div class="header">
+      <div class="header-item"> Imie i nazwisko </div>
+      <div class="header-item">Data rozpoczęcia</div>
+      <div class="header-item">Data zakończenia</div>
+      <div class="header-item">Ilość dni</div>
+      <div class="header-item"></div>
+    </div>
+    <ul class="employee-list">
+      <li *ngFor="let urlop of urlopy">
+        <div class="employee-item">{{urlop.pracownik.imie}} {{urlop.pracownik.nazwisko}}</div>
+        <div class="employee-item">{{ urlop.dataRozp | date:'yyyy-MM-dd' }}</div>
+        <div class="employee-item">{{ urlop.dataZak | date:'yyyy-MM-dd' }}</div>
+        <div class="employee-item">{{ urlop.iloscDni }}</div>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+.main-wezurlop {
+  background-color: lightgreen;
+  color: black;
+  width: calc(100vw - 50vh);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 50vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow-y: auto;
+  padding: 20px; /* Dodano padding */
+}
+
+.duza-czcionka {
+  font-size: 48px;
+  font-family: fantasy, sans-serif;
+  margin-bottom: 20px; /* Dodano margines dolny */
+}
+
+.employee-list-container {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolumny o równej szerokości */
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ccc;
+}
+
+.header-item {
+  padding: 5px;
+  text-align: center;
+}
+
+.employee-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.employee-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolumny o równej szerokości */
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+button {
+  background-color: seagreen;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+  button:hover {
+    background-color: lightgreen;
+    color: black;
+  }

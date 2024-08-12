@@ -1,0 +1,61 @@
+.green-panel {
+  background-color: seagreen;
+  color: whitesmoke;
+  width: 50vh; /* Szerokość panelu */
+  height: 100vh; /* Pełna wysokość okna przeglądarki */
+  position: fixed; /* Panel pozostaje na stałe po lewej stronie */
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: seagreen;
+  color: whitesmoke;
+  padding: 20px;
+  font-size: 36px;
+}
+
+.footer {
+  margin-bottom: 20px;
+  background-color: seagreen;
+  color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.btn {
+  width: 50vh;
+  padding: 25px 50px;
+  font-size: 24px;
+  color: white;
+  background-color: seagreen;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.btn-wyloguj {
+  width: 50vh;
+  padding: 25px 50px;
+  font-size: 18px;
+  color: whitesmoke;
+  background-color: seagreen;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.btn-wyloguj:hover{
+    background-color: lightgreen;
+    color: black;
+}
+.btn:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
